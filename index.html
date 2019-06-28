@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Puzzle</title>
+
+<style type="text/css">
+    * {
+        font-family: Verdana;
+    }
+
+    body {
+        font-size: 10pt;
+    }
+
+    .cell {
+        width: 50px;
+    }
+
+    .num {
+        padding: 8px 0;
+        border: 1px solid #0099FF;
+        background-color: #CCFFFF;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        color: #0099FF;
+        cursor: pointer;
+    }
+
+    #moves {
+        border: 1px solid #FF6600;
+        background-color: #FFFFCC;
+        font-weight: bold;
+        padding: 2px 5px;
+        color: #FF6600;
+    }
+
+    a {
+        color: Blue;
+    }
+
+    #desc {
+        display: block;
+        width: 500px;
+        text-align: justify;
+        font-size: 0.8em;
+        color: #909090;
+    }
+</style>
+
+</head>
+<body>
+
+    <table cellpadding="0" cellspacing="4" align="center" id="tbl"></table>
+    <div class="field-group">
+        <input type="text" name="rows" id="rows" value="4" size="3">
+        <span>X</span>
+        <input type="text" name="cols" id="cols" value="4" size="3">
+        <input type="button" value="New Game" onclick="Reset()">
+    </div>
+    <div class="moves">
+        <span>Moves:</span> <span id="moves">0</span>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
